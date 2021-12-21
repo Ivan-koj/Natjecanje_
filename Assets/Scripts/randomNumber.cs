@@ -8,43 +8,50 @@ using static Unity.Mathematics.math;
 
 public class randomNumber : MonoBehaviour
 {
+    public float Num22;
+    public float Num11;
     public static randomNumber instance;
     private float answer;
+    private string answer2;
     public float Num2;
-    public float Num1;
-    Text RandomNumber;
+    public float Num1; 
+    public GameObject Task;
  
     // Start is called before the first frame update
     void Start()
     {
-        randomNum();
-        RandomNumber = GetComponent<Text>();
+        Num11=Num2=round(Random.Range(1.0f, 100.0f)); 
+        Num22=Num1=round(Random.Range(1.0f, 100.0f));
+        answer = Num11 + Num22;
+        Debug.Log(answer);
     }
 
     // Update is called once per frame
     void Update()
     {
-        RandomNumber.text = Num1 + " + " + Num2;
+        Task.GetComponent<Text>().text = Num11 + " + " + Num22;
     }
-
     public void randomNum()
     {
-        Num2=round(Random.Range(1.0f, 100.0f));
-        Num1=round(Random.Range(1.0f, 100.0f));
+       
+        Num11=Num2=round(Random.Range(1.0f, 100.0f)); 
+        Num22=Num1=round(Random.Range(1.0f, 100.0f));
+        
     }
-    public void Zbrajanje()
-    {
-        answer = Num1 + Num2;
-        Debug.Log(answer);
-    }
+    
 
-    public void Jednakost()
+    public void Calculate()
     {
-        if (answer == float.Parse(IField.instance.input))
+        answer = Num11 + Num22;
+        Debug.Log(answer);
+        
+        if(answer.ToString() == IField.instance.input)
         {
             ScoreScript.instance.Answer();
         }
+        Debug.Log(answer);
     }
+   
     
     
     

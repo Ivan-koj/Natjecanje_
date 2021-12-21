@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
+using static Unity.Mathematics.math;
+using Random = UnityEngine.Random;
 
 public class IField : MonoBehaviour
 {
+    
+    public float number;
+    
     public static IField instance;
     public string input;
     
@@ -19,18 +24,20 @@ public class IField : MonoBehaviour
     {
         
     }
+   
 
     public void ReadStringInput(string s)
     {
-        input = s;
+        
+        input =s;
+        
+        
     }
 
     public void Check()
     {
         Debug.Log(input);
-        randomNumber.instance.randomNum();
-        randomNumber.instance.Zbrajanje();
-        randomNumber.instance.Jednakost();
+        
     }
     
 }
