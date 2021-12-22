@@ -44,10 +44,15 @@ public class randomNumber : MonoBehaviour
     {
         answer = Num11 + Num22;
         Debug.Log(answer);
+        string answerString = answer.ToString();
         
-        if(answer.ToString() == IField.instance.input)
+        if(answerString == IField.instance.input)
         {
             ScoreScript.instance.Answer();
+        }
+        else
+        {
+            Debug.Log("Incorrect");
         }
         Debug.Log(answer);
     }
