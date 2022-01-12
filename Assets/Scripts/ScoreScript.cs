@@ -7,26 +7,25 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
     public static ScoreScript instance;
-    public static int scoreValue = 0;
-    public Text score;
+    public int scoreValue = 0;
+    public Text Score;
     // Start is called before the first frame update
     void Start()
     {
-        score = GetComponent<Text>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        score = GetComponent<Text>();
-        score.text = "Score: " + scoreValue;
+         
+        Score = GetComponent<Text>();
+        Score.text = "Score: " + scoreValue;
     }
 
     public void Answer()
     {
-
-        scoreValue += 1;
-        Debug.Log("Correct");    
         
+        scoreValue += 1;
     }
 }

@@ -13,9 +13,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../Pixwar/Assets/Script/ScoreScript.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="ProjectId" id="22Ht8Rl1VAxEFBTJDk8qdMzZN6F" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,6 +69,10 @@
       <workItem from="1640108039287" duration="2524000" />
       <workItem from="1640121744074" duration="413000" />
       <workItem from="1640164175912" duration="2588000" />
+      <workItem from="1640208669159" duration="231000" />
+      <workItem from="1641756101290" duration="3830000" />
+      <workItem from="1641980588311" duration="6916000" />
+      <workItem from="1642021290420" duration="4315000" />
     </task>
     <servers />
   </component>

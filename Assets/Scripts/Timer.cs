@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using static Unity.Mathematics.math;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class Timer : MonoBehaviour
             timeRemaining = 0;
             Time.timeScale = 0f;
             IsPause = true;
+            SceneManager.LoadScene("end");
         }
         
     }

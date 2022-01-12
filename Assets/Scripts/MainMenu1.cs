@@ -18,13 +18,21 @@ public class MainMenu1 : MonoBehaviour
         
     }
     public void StartGame()
-        {
+    {
             SceneManager.LoadScene(startScene);
-        }
+    }
     
-        public void QuitGame()
-        {
+    public void QuitGame() 
+    {
             Application.Quit();
             Debug.Log(message:"Quitting game");
-        }
+    }
+    public void Credits()
+    {
+            SceneManager.LoadScene("Credits");
+    }
+    public void Back()
+    {
+            SceneManager.LoadScene("Singleplayer 1");
+    }
 }
