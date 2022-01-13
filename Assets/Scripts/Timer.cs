@@ -30,10 +30,6 @@ public class Timer : MonoBehaviour
         }
         else
         {
-           
-            timeRemaining = 0;
-            Time.timeScale = 0f;
-            IsPause = true;
             SceneManager.LoadScene("end");
         }
         

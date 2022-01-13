@@ -13,6 +13,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/End.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="22Ht8Rl1VAxEFBTJDk8qdMzZN6F" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -73,6 +76,7 @@
       <workItem from="1641756101290" duration="3830000" />
       <workItem from="1641980588311" duration="6916000" />
       <workItem from="1642021290420" duration="4315000" />
+      <workItem from="1642093971807" duration="8287000" />
     </task>
     <servers />
   </component>
