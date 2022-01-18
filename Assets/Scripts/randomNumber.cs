@@ -12,6 +12,7 @@ public class randomNumber : MonoBehaviour
     public static randomNumber instance;
     public int scoreValue = 0;
     public GameObject Score;
+    public GameObject Score1;
     private string answerString;
     public float Num22;
     public float Num11;
@@ -31,6 +32,7 @@ public class randomNumber : MonoBehaviour
     }
     void Update()
     {
+        Score1.GetComponent<Text>().text = "Score: " + scoreValue;
         Score.GetComponent<Text>().text = "Score: " + scoreValue;
         if (PlusMinus == 1)
         {
@@ -48,6 +50,7 @@ public class randomNumber : MonoBehaviour
             answer = Num11 * Num22;
         }
         
+        
     }
     public void RandomNum()
     {
@@ -58,15 +61,15 @@ public class randomNumber : MonoBehaviour
             if (answerString == input)
             {
                 scoreValue += 10;
-                Num11 = Num2 = round(Random.Range(1.0f, 100.0f));
-                Num22 = Num1 = round(Random.Range(1.0f, 100.0f));
+                Num11 = Num2 = round(Random.Range(1.0f, 30.0f));
+                Num22 = Num1 = round(Random.Range(1.0f, 30.0f));
             }
             else
             {
 
                 Debug.Log("Incorrect");
-                Num11 = Num2 = round(Random.Range(1.0f, 100.0f));
-                Num22 = Num1 = round(Random.Range(1.0f, 100.0f));
+                Num11 = Num2 = round(Random.Range(1.0f, 30.0f));
+                Num22 = Num1 = round(Random.Range(1.0f, 30.0f));
             }
         }
         else
@@ -74,15 +77,15 @@ public class randomNumber : MonoBehaviour
             if (answerString == input)
             {
                 scoreValue += 1;
-                Num11 = Num2 = round(Random.Range(1.0f, 100.0f));
-                Num22 = Num1 = round(Random.Range(1.0f, 100.0f));
+                Num11 = Num2 = round(Random.Range(1.0f, 30.0f));
+                Num22 = Num1 = round(Random.Range(1.0f, 30.0f));
             }
             else
             {
 
                 Debug.Log("Incorrect");
-                Num11 = Num2 = round(Random.Range(1.0f, 100.0f));
-                Num22 = Num1 = round(Random.Range(1.0f, 100.0f));
+                Num11 = Num2 = round(Random.Range(1.0f, 30.0f));
+                Num22 = Num1 = round(Random.Range(1.0f, 30.0f));
             }
         }
 

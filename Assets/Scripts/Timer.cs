@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+    public GameObject la;
+    public GameObject la1;
     public static Timer instance;
     public GameObject pauseScreen;
     public bool IsPause=false;
@@ -27,10 +29,13 @@ public class Timer : MonoBehaviour
             
             timeRemaining -= Time.deltaTime;
             IsPause = false;
+            la.SetActive(true);
+            la1.SetActive(false);
         }
         else
         {
-            SceneManager.LoadScene("end");
+            la1.SetActive(true);
+            la.SetActive(false);
         }
         
     }
