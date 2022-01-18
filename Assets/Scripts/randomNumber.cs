@@ -28,7 +28,7 @@ public class randomNumber : MonoBehaviour
     {
         Num11=Num2=round(Random.Range(1.0f, 30.0f)); 
         Num22=Num1=round(Random.Range(1.0f, 30.0f));
-        PlusMinus=round(Random.Range(1.0f, 3.0f));
+        PlusMinus=round(Random.Range(1.0f, 4.0f));
     }
     void Update()
     {
@@ -89,7 +89,7 @@ public class randomNumber : MonoBehaviour
             }
         }
 
-        PlusMinus=round(Random.Range(1.0f, 3.0f)); 
+        PlusMinus=round(Random.Range(1.0f, 4.0f)); 
         Debug.Log(answerString);
         Debug.Log(input);
     }

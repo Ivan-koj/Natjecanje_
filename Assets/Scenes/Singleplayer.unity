@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa98d60de5954414691c4d895ddf3435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startScene: 
+  startScene: Singleplayer
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2051,7 +2051,7 @@ MonoBehaviour:
   la1: {fileID: 1636068489}
   pauseScreen: {fileID: 2018657800}
   IsPause: 0
-  timeRemaining: 15
+  timeRemaining: 60
 --- !u!114 &2018657803
 MonoBehaviour:
   m_ObjectHideFlags: 0
