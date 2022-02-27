@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
 {
     public GameObject la;
     public GameObject la1;
+    public GameObject la3;
     public static Timer instance;
     public GameObject pauseScreen;
     public bool IsPause=false;
@@ -31,12 +32,27 @@ public class Timer : MonoBehaviour
             IsPause = false;
             la.SetActive(true);
             la1.SetActive(false);
+            
         }
         else
         {
             la1.SetActive(true);
             la.SetActive(false);
+            
         }
+        
+    }
+
+    public void Quit()
+    {
+        Time.timeScale = 0;
+        la3.SetActive(true);
+        
+    }
+    public void Continue()
+    {
+        Time.timeScale = 1f;
+        la3.SetActive(false);
         
     }
 
