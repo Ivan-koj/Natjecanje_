@@ -63,8 +63,8 @@ public class randomNumberPlayer1 : MonoBehaviour
     void Start()
     {
         
-        Num11=Num2=round(Random.Range(1.0f, 10.0f)); 
-        Num22=Num1=round(Random.Range(1.0f, 2.0f));
+        Num11=Num2=round(Random.Range(1.0f, 30.0f)); 
+        Num22=Num1=round(Random.Range(1.0f, 10.0f));
         PlusMinus=round(Random.Range(1.0f, 5.0f));
     }
     void Update()
@@ -185,7 +185,7 @@ public class randomNumberPlayer1 : MonoBehaviour
             }
         }
         FinalScore.GetComponent<Text>().text = "Player 1 had: " + scoreValue;
-        Score.GetComponent<Text>().text = "Score: " + scoreValue;
+        Score.GetComponent<Text>().text = "Player 1 have: " + scoreValue;
         if (PlusMinus == 2)
         {
             Task.GetComponent<Text>().text = Num11 + " + " + Num22;

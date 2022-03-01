@@ -22,9 +22,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timer1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/randomNumberPlayer2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/End.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimerMultiplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/randomNumberPlayer1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22Ht8Rl1VAxEFBTJDk8qdMzZN6F" />
@@ -103,6 +103,8 @@
       <workItem from="1645819085200" duration="1500000" />
       <workItem from="1645961672771" duration="8872000" />
       <workItem from="1645981794346" duration="17094000" />
+      <workItem from="1646152058474" duration="5000" />
+      <workItem from="1646152091645" duration="4480000" />
     </task>
     <servers />
   </component>

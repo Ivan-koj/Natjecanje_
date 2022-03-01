@@ -29,8 +29,8 @@ public class randomNumber : MonoBehaviour
 
     void Start()
     {
-        Num11=Num2=round(Random.Range(1.0f, 10.0f)); 
-        Num22=Num1=round(Random.Range(1.0f, 2.0f));
+        Num11=Num2=round(Random.Range(1.0f, 30.0f)); 
+        Num22=Num1=round(Random.Range(1.0f, 10.0f));
         PlusMinus=round(Random.Range(1.0f, 5.0f));
     }
     void Update()
@@ -157,10 +157,7 @@ public class randomNumber : MonoBehaviour
         
     }
 
-    public void Answer()
-    {
-        scoreValue += 1;
-    }
+    
 
 }
 

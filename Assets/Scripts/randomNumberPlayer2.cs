@@ -183,7 +183,7 @@ public class randomNumberPlayer2 : MonoBehaviour
             }
         }
         FinalScore.GetComponent<Text>().text = "Player 2 had: " + scoreValue;
-        Score.GetComponent<Text>().text = "Score: " + scoreValue;
+        Score.GetComponent<Text>().text = "Player 2 have: " + scoreValue;
         if (PlusMinus == 2)
         {
             Task.GetComponent<Text>().text = Num11 + " + " + Num22;

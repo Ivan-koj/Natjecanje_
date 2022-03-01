@@ -11,8 +11,6 @@ public class Timer : MonoBehaviour
     public GameObject la1;
     public GameObject la3;
     public static Timer instance;
-    public GameObject pauseScreen;
-    public bool IsPause=false;
     public float timeRemaining;
     Text timer;
 
@@ -29,7 +27,6 @@ public class Timer : MonoBehaviour
         {
             
             timeRemaining -= Time.deltaTime;
-            IsPause = false;
             la.SetActive(true);
             la1.SetActive(false);
             

@@ -21,6 +21,7 @@ public class MainMenu1 : MonoBehaviour
     public void StartGame()
     {
             SceneManager.LoadScene(startScene);
+            Time.timeScale = 1f;
     }
     
     public void QuitGame() 
@@ -31,6 +32,7 @@ public class MainMenu1 : MonoBehaviour
     public void Credits()
     {
             SceneManager.LoadScene("Credits");
+            
     }
     public void Back()
     {
@@ -39,7 +41,13 @@ public class MainMenu1 : MonoBehaviour
     public void Multiplayer()
     {
             SceneManager.LoadScene("Multiplayer");
+            Time.timeScale = 1f;
     }
+    public void Controls()
+    {
+            SceneManager.LoadScene("Controls");
+    }
+    
 
    
 }
